@@ -6,13 +6,13 @@
 //#include "output.c"
 
 void main() {
-    int ans1 = 0, ans2 = 0, k = 3, array1[20], array2[6][8];
+    int glock = 0, rari = 0, k = 3, array1[20], array2[6][8];
     create_array(11, &array1[0], 20, 1);
     create_array(11, (int *)array2, 6, 8);
     display_array(&array1[0], 20, 1);
     display_array((int *)array2, 6, 8);
-    calculations(&array1[0], (int *)array2, &ans1, &ans2, k, 20, 6, 8);
-    output(ans1, ans2);
+    calculations(&array1[0], (int *)array2, &glock, &rari, k, 20, 6, 8);
+    output(glock, rari);
 }
 
 // include.h - wha.. do i like create header file with name 'include' lol. Well now in the file with main func there is only
