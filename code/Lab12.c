@@ -6,7 +6,11 @@
 //#include "output.c"
 
 void main() {
-    int glock = 0, rari = 0, k = 3, array1[20], array2[6][8];
+    int glock = 0;
+    int rari = 0; 
+    int k = 3; /* Переменная, которой должна быть равна сумма индексов матрицы k == i+j */
+    int array1[20]; // одномерный массив или матрица-строка
+    int array2[6][8]; // двумерный массив
     create_array(11, &array1[0], 20, 1);
     create_array(11, (int *)array2, 6, 8);
     display_array(&array1[0], 20, 1);
